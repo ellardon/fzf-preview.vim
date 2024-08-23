@@ -48,7 +48,7 @@ command! -bang -nargs=* FZFHistory
 "             \ call fzf#vim#lines(<q-args>, {
 "             \   'options': '-m --layout=default'
 "             \ }, <bang>0)
-command! -bang -nargs=* FZFBLines
+command! -bang -nargs=* BLines
       \ call fzf#vim#buffer_lines(<q-args>,
       \     fzf_preview#p(<bang>0, {'placeholder': fzf#shellescape(expand('%')) . ':{1}',
       \                 'options': '--preview-window +{1}-/2'}),
